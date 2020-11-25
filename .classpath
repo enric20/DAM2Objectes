@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
+			<attribute name="limit-modules" value="java.se,jdk.accessibility,jdk.httpserver,jdk.jartool,jdk.jconsole,jdk.jshell,jdk.jsobject,jdk.management.jfr,jdk.net,jdk.sctp,jdk.security.auth,jdk.security.jgss,jdk.unsupported.desktop,jdk.xml.dom,jdk.charsets,jdk.hotspot.agent,jdk.pack,jdk.rmic,jdk.jstatd,jdk.jcmd,jdk.crypto.cryptoki,jdk.naming.rmi,jdk.zipfs,jdk.crypto.mscapi,jdk.editpad,java.smartcardio,jdk.jlink,jdk.scripting.nashorn.shell,jdk.internal.vm.compiler.management,jdk.aot,jdk.naming.dns,jdk.localedata"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Program Files/Java/jdk-11.0.5/lib/jrt-fs.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
