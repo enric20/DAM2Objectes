@@ -346,34 +346,6 @@ public class Support {
 		return dataNaixementLDEsportista;
 	}
 	
-	/**
-	 * Establir dni esportista, si el dni es inferior a 9 retorna un error
-	 * @return String dniEsportista
-	 */
-	public static String EstablirDniEsportista() {
-		
-		String dniEsportista = "";
-		boolean dniRepetit = true;
-		
-		while (dniRepetit) {
-			
-			try {
-				System.out.print("DNI de l'esportista: ");
-				dniEsportista = lector.nextLine().substring(0, 9); //Si es superior a 9 el retalla
-				dniRepetit = Support.ComprovarDniRepetit(dniEsportista, DadesObjectes.esportistes);
-				if (dniRepetit == true) {
-					System.out.println("El DNI esta repetit");
-				}
-			}
-			
-			catch (Exception e) { //Si la longitud del string es inferior a 9 retornara el següent error
-				System.out.println("El DNI ha de ser un codi de 9 digits");
-			}
-			
-		}
-		
-		return dniEsportista;
-	}
 	
 	/**
 	 * Establir Club Esportista, revisara que el club existeixi, si no existeix tornarà a preguntar
