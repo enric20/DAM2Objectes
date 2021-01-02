@@ -9,7 +9,8 @@ import java.util.ArrayList;
 
 public class GuardarFutbolistes {
 
-	static File file = new File("C:\\fitxers\\futbolistes.txt");
+	static File file = new File("C:\\fitxers/futbolistes.txt"); // Si el directori no existeix no crea l'arxiu.
+	
 	
 	public static void GuardarEsportistes(ArrayList<String> nom, ArrayList<Float> salari, ArrayList<Duration> entrenamentSetmanal) {
 		
